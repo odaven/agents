@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+DIR="$(cd "$(dirname "$0")" && pwd)"
+
+link() {
+  local src="$1"
+  local dst="$2"
+
+  rm -rf "$dst"
+  ln -sfv "$src" "$dst"
+}
+
+# Copilot
+link "$DIR/AGENTS.md" "$COPILOT_HOME/copilot-instructions.md"
