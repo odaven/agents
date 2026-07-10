@@ -13,14 +13,10 @@
 - Never push directly to `main`, `master`, or `develop`.
 - Branch names: `feat/add-user-search`, `fix/null-pointer-on-login`, `refactor/simplify-cache`
 - One logical change per commit. Don't mix refactoring with functional changes.
-- Commit messages follow Conventional Commits: `type(scope): description` or `type: description`
-  - `feat:` `fix:` `docs:` `style:` `refactor:` `perf:` `test:` `build:` `ci:` `chore:` `revert:`
+- Use Conventional Commits for commit messages and PR titles: `type(scope): description` or `type: description`
   - Example: `feat(auth): add JWT validation`, `fix(api): handle null responses`
-- PR titles follow Conventional Commits style.
-- Don't merge PRs without explicit instruction.
-- Don't close issues without explicit instruction.
-- Don't rewrite shared history unless explicitly requested.
-- Don't force push unless explicitly requested.
+- Never merge PRs or close issues without explicit instruction.
+- Never rewrite shared history or force-push unless explicitly requested.
 
 ---
 
