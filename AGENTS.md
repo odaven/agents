@@ -40,6 +40,17 @@
 
 ## TypeScript
 
+- Prefer optional chaining (`?.`) for null-safe property and method access.  
+  Don’t mix `obj?.x` with `obj.x && ...` in the same access path:
+
+  ```typescript
+  // Good
+  const includesPattern = obj?.field?.includes("pattern");
+
+  // Bad
+  const includesPattern = obj?.field && obj.field.includes("pattern");
+  ```
+
 - Use dot notation for field access. Bracket notation only for dynamic keys or special characters:
 
   ```ts
